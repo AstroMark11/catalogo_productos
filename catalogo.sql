@@ -88,3 +88,10 @@ add foreign key (categoría_id) references categorias(categoría_id);
 alter table productos
 add column proveedor_id int,
 add foreign key (proveedor_id) references proveedores(proveedor_id);
+
+-- Insertar datosen la tabla productos
+insert into productos (nombre_producto, categoría, precio, descripción, cantidad_en_existencia)
+values ('laptop Dell', 'computadoras', 950.00, 'gamer', 50),
+       ('Impresora Brother', 'impresoras', 350.00, 'multifuncional', 28),
+       ('Iphone 15', 'telefónos inteligentes', 1500.00, 'Iphone MAX', 18),
+       ('Reloj Garmin', 'relojes inteligentes', 450.00, 'Reloj multifuncional', 60);

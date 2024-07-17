@@ -18,14 +18,14 @@ create table productos (
 
 -- Crear tabla categorías
 create table categorias (
-	categoría_id int primary key auto_increment,
+    categoría_id int primary key auto_increment,
     nombre_categoría varchar(50) not null,
     descripción text
 );
 
 -- Crear tabla proveedores
 create table proveedores (
-	proveedor_id int primary key auto_increment,
+    proveedor_id int primary key auto_increment,
     nombre_provedor varchar(50) not null,
     dirección varchar(50),
     teléfono varchar(50),
@@ -78,3 +78,13 @@ create table vendedores (
     salario decimal(10, 2),
     fecha_contratación date
 );
+
+-- Productos puede tener una clave foránea que referencia a categorias:
+alter table productos
+add column categoría_id int,
+add foreign key (categoría_id) references categorias(categoría_id);
+
+-- Productos puede tener una clave foránea que referencia a proveedores:
+alter table productos
+add column proveedor_id int,
+add foreign key (proveedor_id) references proveedores(proveedor_id);

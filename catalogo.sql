@@ -5,7 +5,7 @@ use catalogoproductos;
 
 -- Crear tabla productos
 create table productos (
-	producto_id int primary key auto_increment,
+    producto_id int primary key auto_increment,
     nombre_producto varchar(50),
     categoría varchar(50),
     precio decimal(10, 2),

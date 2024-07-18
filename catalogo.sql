@@ -103,3 +103,10 @@ values ('computadoras', 'laptops gamers'),
        ('teléfonos inteligentes', 'teléfonos iphone'),
        ('relojes_inteligentes', 'reloj garmin multifuncional'),
        ('consolas juego', 'play station');
+
+-- Insertar datos en la tabla proveedores
+insert into proveedores (nombre_proveedor, dirección, teléfono, correo)
+values ('XPC', 'Juan sin Miedo y la que cruza', 555666888, 'admin@xpc.com'),
+	   ('ABC', 'Juan Solo y Loba Cruceta', 8989896565, 'info@abc.com'),
+       ('Tecnoman', 'Juan Zorro y Amdador Salvaje', 4145414242, 'ventas@tecnoman.com'),
+       ('Potro Electronics', 'Juan Grillo y Ana la loca', 2123212325, 'admin@potroelectronics.com');

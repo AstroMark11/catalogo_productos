@@ -16,9 +16,9 @@ create table productos (
     fecha_actualización timestamp default current_timestamp 
 );
 
--- Crear tabla categorías
+-- Crear tabla categorias
 create table categorias (
-    categoría_id int primary key auto_increment,
+    categoria_id int primary key auto_increment,
     nombre_categoría varchar(50) not null,
     descripción text
 );
@@ -97,9 +97,9 @@ values ('laptop Dell', 'computadoras', 950.00, 'gamer', 50),
        ('Reloj Garmin', 'relojes inteligentes', 450.00, 'Reloj multifuncional', 60);
 
 -- Insertar datos en la tabla categorias
-insert into categorias (nombre_categoría, descripción)
+insert into categorias (nombre_categoria, descripción)
 values ('computadoras', 'laptops gamers'),
-	   ('impresoras', 'impresoras 3 en 1'),
+       ('impresoras', 'impresoras 3 en 1'),
        ('teléfonos inteligentes', 'teléfonos iphone'),
        ('relojes_inteligentes', 'reloj garmin multifuncional'),
        ('consolas juego', 'play station');

@@ -26,7 +26,7 @@ create table categorias (
 -- Crear tabla proveedores
 create table proveedores (
     proveedor_id int primary key auto_increment,
-    nombre_provedor varchar(50) not null,
+    nombre_proveedor varchar(50) not null,
     dirección varchar(50),
     teléfono varchar(50),
     correo varchar(50)
